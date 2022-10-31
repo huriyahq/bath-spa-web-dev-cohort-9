@@ -1,0 +1,243 @@
+/* Notes */
+/* root font size is 16px */
+
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+}
+/* Body */
+body {
+    background-color: #EEF2F2;
+    background-image: url("../images/sprinkles.jpg");
+    background-size: 30%;
+    color: #333533;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+/* Flexbox*/
+.container {
+    margin: 8%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Links */
+a:link {
+    text-decoration: none;
+    color: #AE6382;
+    transition-duration: 1s;
+}
+
+a:visited {
+    color: #CB85A1; 
+}
+
+a:active {
+    color: #dfd9e2;
+}
+
+a:hover {
+    color: #dfd9e2;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid #dfd9e2;
+    border-top: 4px solid #dfd9e2;
+}
+
+/* Nav */
+
+.nav-container {
+    background-color: #9ACEA8;
+}
+
+.nav-menu {  
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    background-color: #dfd9e2;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.border {
+    border: 8px dotted #9ACEA8;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+}
+.text-1 {
+    font-family: 'Fredoka One', cursive;
+    color: #CB85A1;
+}
+
+.text-2 {
+    font-family: 'Roboto', sans-serif;
+    color: #AE6382;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+/* Boxes */
+.box:nth-child(2n+1) {
+    background-color:#FCE08D;
+}
+
+.box:nth-child(2n+2) {
+    background-color: rgba(154, 206, 168, .9);
+}
+
+.box:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.box:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+#round-box {
+    border-radius: 10px;
+}
+
+
+/* Images / Captions */
+    .round-img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    figcaption {
+        font-family: 'Fredoka One', cursive;
+        color: #333533;
+        margin-top: 8px;
+    }
+
+
+/* Forms */
+    .contact-form,
+    form  {
+        width: 100%;
+    }
+
+    textarea,
+    input {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        background-color: #EEF2F2;
+        color: #333533;
+        border: 3px solid #EEF2F2;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 70%;
+        padding: 18px;
+        margin: 6px;
+        outline: none;
+
+    }
+    input:focus,
+    input:hover,
+    textarea:focus,
+    textarea:hover {
+        border-color: #FCE08D;
+    }
+
+/* Headings */
+h2 {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Buttons */
+
+.button {
+    outline: none;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    font-weight: 700;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    background-color: #EEF2F2;
+    border: 3px solid #EEF2F2;
+    margin-top: 8px;
+}
+
+.yellow-style:hover {
+    border-color: #FCE08D;
+}
+
+.green-style:hover {
+    border-color: #9ACEA8;
+}
+
+.yellow-style:active {
+    background-color: #FCE08D;
+}
+
+.green-style:active {
+    background-color: #9ACEA8;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #FCE08D;
+    color: #AE6382;
+    text-align: center;
+}

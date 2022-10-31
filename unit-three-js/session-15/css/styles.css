@@ -1,0 +1,142 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* UNIVERSAL STYLES  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLES */
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* FLEXBOX */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    overflow: hidden;
+}
+/* CARD BASE */
+#card {
+    max-width: 25rem;
+    margin: 1rem;
+    padding: 1.2rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+#card h1 {
+    margin-bottom: 0.9rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#card p {
+    margin-bottom: 1.4rem;
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9rem;
+}
+
+/* SUBMIT RATING CARD */
+.star {
+    width: 3rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: hsla(216, 12%, 54%, 0.140);
+    border-radius: 50%;
+}
+
+fieldset {
+    margin-bottom: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap; 
+}
+
+.value {
+    background-color: hsla(216, 12%, 54%, 0.140);
+    color:  hsl(216, 12%, 54%);
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1.4rem;
+    font-size: 1rem;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input:checked + .value {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(213, 19%, 18%);
+}
+
+#submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    border: none;
+    border-radius: 3rem;
+}
+
+.value:hover,
+#submit:hover {
+    cursor: pointer;
+}
+
+/* THANK YOU CARD */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.selected-value {
+    margin: 1.5rem 0;
+    padding: 0.5em 1em;
+    border-radius: 3rem;
+    background-color: hsla(216, 12%, 54%, 0.140);
+    color: hsl(25, 97%, 53%);
+}
+    /* STYLES FOR DESKTOP */
+@media screen and (min-width: 1440px) {
+
+    .star {
+        width: 3.5rem;
+    }
+
+    .value {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 1.8rem;
+  }
+}

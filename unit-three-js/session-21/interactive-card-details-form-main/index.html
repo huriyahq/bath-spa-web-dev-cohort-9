@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Display site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <main class="container">
+    <!-- This is the display card which will be updated live -->
+    <div class="card-container">
+      <div class="cc__cards">
+        <!-- front of card -->
+        <div class="cc__front cc__img_container">
+          <!-- card front background image -->
+          <img class="card" src="./images/bg-card-front.png" alt="front of card">
+          <div class="cc__logo">
+            <!-- logo -->
+            <img src="./images/card-logo.svg" alt="logo">
+          </div>
+          <div class="cc__name">
+            <!-- cardholder name -->
+            <p id="cc__name">Jane Appleseed</p>
+          </div>
+          <div class="cc__number">
+            <!-- card number -->
+            <p id="cc__number">0000 0000 0000 0000</p>
+          </div>
+          <div class="cc__exp">
+            <!-- card exp date -->
+            <p>
+              <span id="cc__mm">00</span>/<span id="cc__yy">00</span>
+            </p>
+          </div>
+        </div>
+        <!-- back of card -->
+        <div class="cc__back cc__img_container">
+           <!-- back of card background image-->
+           <img class="card" src="./images/bg-card-back.png" alt="back of card">
+         <!-- back of card cvc number -->
+         <div class="cc__cvc">
+          <p id="cc__cvc">000</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-container">
+      <div class="checkout__form">
+        <form id="checkout-form" action="" method="GET" onsubmit="return false">
+
+          <!-- Input field for cardholder name -->
+          <div>
+            <label for="cname">Cardholder Name</label>
+            <input type="text" name="cname" id="cname" placeholder="e.g. Jane Appleseed" maxlength="28"  onkeydown="return /[a-z ]/i.test(event.key)">
+          </div>
+
+          <!-- Input field for card number -->
+          <div>
+            <label for="cnumber">Card Number</label>
+            <input type="text" name="cnumber" id="cnumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+          </div>
+
+          <!-- Place exp date and cvc on same row -->
+          <div>
+            <!-- Input fields for exp date -->
+            <div class="form-row">
+              <div class="grid-box">
+              <label class="exp-date"for="exp">Exp. Date (MM/YY)</label>
+                <div class="mm-yy">
+                <input type="text" name="exp" id="mm" placeholder="MM" maxlength="2" onkeypress="return /[0-9]/i.test(event.key)">
+                <input type="text" name="exp" id="yy" placeholder="YY" maxlength="2" onkeypress="return /[0-9]/i.test(event.key)">
+              </div>
+
+            </div>
+            <!-- Input field for cvc  -->
+            <div class="grid-box">
+              <label class="form-row__cvc" for="cvc">CVC</label>
+              <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" onkeypress="return /[0-9]/i.test(event.key)">
+          </div>
+        </div>
+          <div>
+            <input id="submit" class="btn" type="submit" value="Confirm"></input>
+          </div>
+        </form>
+        <p id="validation-msg"></p>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Completed state start -->
+
+  <!-- Link to external JS -->
+  <script src="./js/script.js"></script>
+  <script src="./js/form-validation.js"></script>
+</body>
+</html>

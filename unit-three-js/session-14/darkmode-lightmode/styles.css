@@ -1,0 +1,16 @@
+.hero {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+#custom-body.dark-mode .hero {
+    background-color: blueviolet;
+}
+
+#custom-body.dark-mode {
+    background-color: gray;
+}

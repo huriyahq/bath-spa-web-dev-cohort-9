@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- external stylesheet -->
+        <link rel="stylesheet" href="../shopping-list/css/styles.css">
+        <title>Shopping List</title>
+    </head>
+    <body>
+        <main class="flex-column">
+            <nav class="toolbar">
+                <!-- toolbar to clear entire list -->
+                <button id="clear" class="clear-btn">&times</button>
+            </nav>
+            <article class="flex-column">
+                <section>
+                    <h1>Shopping List</h1>
+                    <ul id="shopping-list">
+                        <!-- list will appear here -->
+                    </ul>
+                </section>
+                <section>
+                    <p id="display-text">
+                        <!-- error alerts will appear here -->
+                    </p>
+                    <form id="form">
+                        <input id="user-input" class="input" type="text" name="todo-input">
+                        <br/>
+                        <button id="add" class="add-btn">&plus;</button>
+                    </form>
+                </section>
+                </section>
+            </article>
+        </main>
+        <!-- external JS -->
+        <script src="../shopping-list/js/script.js"></script>
+    </body>
+</html>

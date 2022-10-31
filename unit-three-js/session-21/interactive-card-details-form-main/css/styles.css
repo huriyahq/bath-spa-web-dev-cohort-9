@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+/* Mobile: 375px */
+/* Overall */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --gainsboro: hsl(270, 3%, 87%);
+    --taupe-gray: hsl(279, 6%, 55%);
+    --taupe-gray-transparent: hsla(279, 6%, 55%, 0.5);
+    --dark-purple: hsl(278, 68%, 11%);
+}
+
+html {
+    font-size: 18px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Display cards */
+.card-container {
+    background-image: url("../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 65%;
+    display: flex;
+    justify-content: center;
+    padding-inline: 20px;
+}
+
+.cc__cards {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cc__img_container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    color: var(--white);
+}
+
+.card {
+    width: 100%;
+}
+
+.cc__front {
+    z-index: 1;
+    left: -10px;
+    top: -50px;
+}
+
+.cc__back {
+    top: 10%;
+    left: 10px;
+}
+
+.cc__logo,
+.cc__name,
+.cc__number,
+.cc__exp,
+.cc__cvc {
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.cc__logo {
+    top: 7%;
+    left: 7%;
+}
+
+.cc__name {
+    bottom: 2%;
+    left: 6%;
+}
+
+.cc__number {
+    top: 50%;
+    left: 6%;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+.cc__exp {
+    bottom: 2%;
+    right: 6%;
+}
+
+.cc__cvc {
+    /* z-index: 2; */
+    top: 40%;
+    right: 12%;
+}
+
+.cc__name,
+.cc__exp,
+.cc__cvc {
+    font-size: .6rem;
+}
+
+/* Checkout container */
+.checkout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+}
+/* Checkout form */
+label {
+    text-transform: uppercase;
+    color: var(--dark-purple);
+    font-size: 68%;
+    letter-spacing: 2px;
+}
+
+button,
+input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: .25rem;
+    border: 2px solid var(--taupe-gray-transparent);
+    transition: .3s ease-in;
+    margin-bottom: 1rem;
+    color: var(--dark-purple);
+    font-size: 1rem;
+}
+
+input:hover,
+input:focus {
+    border-color: var(--dark-purple);
+}
+
+::placeholder {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--taupe-gray);
+}
+
+.form-row,
+.exp-date,
+.grid-box,
+.mm-yy {
+    display: grid; 
+}
+.form-row {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.grid-box{
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.mm-yy {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.btn {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.btn:active {
+    border-color: var(--taupe-gray);
+    opacity: .8;
+}
+
+/* After submit */
+.accepted-container {
+    width: 100%;
+    text-align: center;
+}
+.accepted-container img {
+    font-size: 1rem;
+}
+
+.accepted-container p {
+    color: var(--taupe-gray);
+    padding-bottom: 1rem;
+    margin-top:0;
+}
+
+/* Media queries */
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+
+    .card-container {
+        background-size: 60% 100%;
+        align-items: center;
+    }
+
+    .cc__cards {
+        display: inline-block;
+    }    
+
+    .cc__front {
+        top: -20px;
+    }
+
+    .cc__back {
+        left: 55px;
+    }
+
+    .cc__number {
+        font-size: 1.2rem;
+    }
+
+    .cc__name,
+    .cc__cv,
+    .cc__exp {
+        font-size: .8rem;
+    }
+
+    .checkout-container {
+        justify-content: center;
+        padding-inline: 0;
+        padding: 0;
+    }
+
+    .checkout__form {
+        width: 70%;
+    }
+}

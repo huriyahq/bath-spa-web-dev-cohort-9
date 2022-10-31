@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    background-color: #5BA1F9;
+    overflow: hidden;
+    position: relative;
+}

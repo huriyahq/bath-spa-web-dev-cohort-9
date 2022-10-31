@@ -1,0 +1,93 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+#email,
+form label > * {
+    text-align: center;
+}
+
+input {
+    height: 2.2rem;
+}
+
+input,
+textarea {
+    outline: 0;
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+    border-radius: 4px;
+    border: 1.5px solid rgba(76, 75, 75, 0.7);
+    background-color: transparent;
+}
+
+input,
+textarea,
+::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgb(76, 75, 75);
+}
+
+input:focus,
+textarea:focus {
+    border-color: #B96D40;
+}
+
+.btn {
+    height: 2.4rem;
+    padding: 0 1rem;
+    border: 1.5px solid;
+    border-radius: 4px;
+    opacity: .9;
+    text-transform: uppercase;
+    outline: 0;
+    margin-bottom: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.outlined-btn {
+    background-color: transparent;
+    border: 1.5px solid rgba(76, 75, 75, 0.7);
+}
+
+.filled-btn {
+    background-color: #B96D40;
+    border-color: #B96D40;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.outlined-btn:hover {
+    background-color: #B96D40;
+    border-color: #B96D40;
+}
+
+.btn:active {
+    opacity: .9;
+}
+
+@media (min-width: 800px) and (min-height: 550px) {
+    form {
+        align-items: flex-start;
+    }
+    input,
+    textarea {
+        margin-bottom: 8px;
+    }
+
+    #email,
+    form label > * {
+        text-align: left;
+    }
+}

@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #000;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.header {
+    height: 80vh;
+    background-color: #000;
+    background-image: url("/images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav {
+    height: 25px;
+    background-color: transparent;
+}
+
+.nav__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.study-with-us,
+.testimonials {
+    padding: 50px 50px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image {
+    width: 45%;
+    height: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-box {
+    width: 45%;
+}
+
+.testimonials p {
+    text-align: center;
+}

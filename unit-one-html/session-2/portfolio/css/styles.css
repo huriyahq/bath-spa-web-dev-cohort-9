@@ -1,0 +1,130 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Body */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+nav,
+main {
+    padding: 20px 0;
+}
+
+/* Heading */
+
+h1 {
+    font-size: 110px;
+    text-transform: lowercase;
+    line-height: 0.5;
+}
+
+.thick {
+    font-weight: 800;
+}
+
+
+.thin {
+    font-weight: 100;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.divider {
+    border: 0.5px solid #EBEBEB;
+    margin: auto;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #1F1F1F;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 300;
+    color: #1F1F1F;
+}
+
+
+/* Nav */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    font-size: 20px; 
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #86A59C;
+    font-weight: 500;
+    transition-duration: 1s;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #5F8177; 
+}
+
+
+a:active {
+    text-decoration: none;
+    color: #333333; 
+}
+
+a:hover {
+    text-decoration: none;
+    color: #C2C2C2; 
+}
+
+/* Buttons */
+
+.contact-button {
+    height: 45px;
+    width: 45px;
+    box-sizing: none;
+    border: 2px solid #86A59C;
+    background-color: #86A59C;
+    border-radius: 4px;
+    color: #fff;
+    transition-duration: 1s;
+    margin: 0 5px;
+}
+
+.contact-button:hover {
+    border-radius: 50%;
+}
+
+.contact-button:active {
+    background-color: #5F8177;
+    border: 2px solid #fff;
+}
+
+
+.button-form {
+    display: inline;
+    margin-top: 30px;
+}
+
+.enter-button {
+    padding-top: 20px;
+}
+

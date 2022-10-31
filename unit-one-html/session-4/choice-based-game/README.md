@@ -1,0 +1,1 @@
+Pokemon sprites from: https://pokemondb.net/

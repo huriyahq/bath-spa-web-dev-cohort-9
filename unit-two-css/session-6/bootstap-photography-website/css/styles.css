@@ -1,0 +1,73 @@
+/* general */
+body {
+    background-image: url("../images/pink-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+    color: #FFF;
+    line-height: 1.5; 
+}
+
+body:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* containers */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    padding: 10% 5%;
+}
+
+/* navbar */
+.navbar {
+    padding: 1% 2%;
+}
+
+.nav-link:link {
+    color: #FFF;
+}
+
+.nav-link:visited {
+    color: #FFF;
+}
+
+.nav-link:hover {
+    color: #f72585;
+    text-decoration: wavy underline #f72585 2px;
+    text-underline-offset: 0.3rem;
+}
+
+.navbar-brand,
+.nav-link:active {
+    color: #FFF;
+    text-decoration: wavy underline #FFF 2px;
+    text-underline-offset: 0.2rem;
+}
+
+/* display text */
+.display-3 {
+    text-decoration: wavy underline #f72585 3px;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #FFF;
+}
+
+/* form */
+.text-area {
+    border-radius: 5px;
+    width: 100%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/068f34bc2f.js" crossorigin="anonymous"></script>
+    <!-- EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Urban Fashion</title>
+</head>
+<body class="body-wrapper">
+    <header class="header-wrapper">
+        <nav class="navbar">
+            <!-- LOGO IMAGE -->
+            <img src="../challenge/imgs/logo.png" alt="logo" class="logo">
+            <!-- TOGGLE BUTTON (VISIBLE ON MOBILE) -->
+            <button class="toggle-button" onclick="showHide()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- NAVIGATION LINKS -->
+            <!-- HIDDEN ON MOBILE VIEW TILL TOGGLED -->
+            <section class="hide" id="toggle-menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Collections</a>
+                    </li>
+                    <li>
+                        <a href="#">Category</a>
+                    </li>
+                </ul>
+            </section>
+                <!-- CART IMG (HIDDEN ON MOBILE) -->
+            <img src="../challenge/imgs/cart.png" alt="cart" id="cart-img">
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="content-wrapper">
+            <article class="article">
+                <a href="" class="grad-btn">2022 Collection</a>
+                <h1>You should always <br/> feel pretty</h1>
+                <p>
+                    Clothes that are sure to heat up your winter.
+                </p>
+                <section class="arrow-icons">
+                    <img src="../challenge/imgs/back-arrow.png" alt="back">
+                    <img src="../challenge/imgs/next-arrow.png" alt="next">
+                </section>
+            </article>
+            <nav class="social-icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </nav>
+            <img src="../challenge/imgs/img.png" alt="" class="bg-feature">
+        </section>
+    </main>
+    <!-- EXTERNAL JS -->
+   <script src="script.js"></script> 
+</body>
+</html>

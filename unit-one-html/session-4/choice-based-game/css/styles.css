@@ -1,0 +1,132 @@
+/* Overall styles */
+body,
+input {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Nav */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Footer */
+footer p {
+    color: #C2C2C2;
+}
+
+/* Links */
+a:link {
+    text-decoration: none;
+    color: #EF767A;
+    transition-duration: 0.4s;
+}
+
+a:visited {
+    color: #456990;
+}
+
+a:hover {
+    color: #EEB868; 
+}
+
+a:active {
+    color: #49DCB1; 
+}
+    
+/* Forms */
+input {
+    width: 50%;
+    padding: 10px 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #49DCB1;
+    border-radius: 2px;
+    outline: none;
+}
+
+input,
+::placeholder {
+    color: #49DCB1;
+    transition-duration: 0.4s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(79%) sepia(83%) saturate(350%) hue-rotate(92deg) brightness(90%) contrast(92%);
+}
+
+input:focus,
+input:focus::placeholder {
+    border-color: #EF767A;
+    color: #EF767A;
+}
+
+input:hover,
+input:hover::placeholder {
+    border-color: #EEB868;
+    color: #EEB868;
+}
+
+input[type="date"]:focus::-webkit-calendar-picker-indicator,
+input[type="time"]:focus::-webkit-calendar-picker-indicator {
+      filter: invert(70%) sepia(30%) saturate(2820%) hue-rotate(308deg) brightness(95%) contrast(98%);
+ }
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator,
+input[type="time"]:hover::-webkit-calendar-picker-indicator {
+    filter: invert(95%) sepia(56%) saturate(4830%) hue-rotate(308deg) brightness(96%) contrast(95%);
+}
+      
+/* Buttons */
+#submit-btn {
+    background-color: #49DCB1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 28px;
+    transition-duration: 0.4s;
+    margin: 0;
+    width: 50%;
+}
+
+#submit-btn:hover {
+    background-color: #EEB868;
+}
+
+#submit-btn:active {
+    background-color: #EF767A;
+}
+
+ /* Choices section */   
+ hr {
+    border: 2px dashed #EEB868;
+    width: 50%;
+    margin: 8px auto;
+}
+
+article a::before:not(.start-game) {
+    content: ">> ";
+    color: #49DCB1;
+    font-weight: 700;
+}
+
+
+article a {
+    line-height: 1.5;
+}
+
+ /* Spans */ 
+ .emphasis {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #EEB868;
+ }
